@@ -1,5 +1,7 @@
 document.getElementById("mySubmit").onclick = function(){
     let number = Number(document.getElementById("theNumber").value);
+    
+    
     let reverse = 0;
     while (number > 0) {
         reverse = number%10 + reverse*10 ;
