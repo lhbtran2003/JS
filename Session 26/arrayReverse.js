@@ -1,19 +1,8 @@
 
-
-
-document.getElementById("continueBtn").onclick = function() {
-    let arr = [];
-    let number;
-    let i = 0;
-    if (i < 10) {
-        number = document.getElementById("theText").value;
-        number = Number(number);
-    }
-    arr.push(number);
-    console.log(arr);
+let array = [1, 2, 3, 4, 5];
+let arrayReserve = [];
+for (let i = array.length - 1; i >= 0; i--) {
+    arrayReserve.push(mang[i]);
 }
 
-   
-    // if(document.getElementById("theSubmit").onclick) {
-    //     console.log('Array is' + arr);
-    // }
+console.log(arrayReserve);
