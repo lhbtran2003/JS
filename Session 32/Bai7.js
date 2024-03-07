@@ -1,4 +1,4 @@
-const users = [];
+const users = []; //mảng trống
 
 function validateEmail(email) {
     const re = /\S+@\S+\.\S+/;
