@@ -9,13 +9,13 @@ function createUser() {
     let id = users.length + 1;
     let user_name = prompt('Nhập tên người dùng:');
     let email = prompt('Nhập email:');
-    let password = prompt('Nhập mật khẩu:');
+    let password = prompt('Nhập mật khẩu (ít nhất 8 kí tự):');
 
     while (!user_name || user_name.length < 3 || !email || !validateEmail(email) || !password || password.length < 8) {
         console.log('Dữ liệu không hợp lệ. Vui lòng nhập lại:');
         user_name = prompt('Nhập tên người dùng:');
         email = prompt('Nhập email:');
-        password = prompt('Nhập mật khẩu:');
+        password = prompt('Nhập mật khẩu (ít nhất 8 kí tự):');
     }
 
     return { id, user_name, email, password };
