@@ -61,7 +61,8 @@ while (true) {
             break;
         case 4:
             console.log("Exiting the program.");
-            return;
+            // return;
+            break;
         default:
             console.log("Invalid choice. Please choose again.");
     }

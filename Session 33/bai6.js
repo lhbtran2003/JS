@@ -54,7 +54,7 @@ while (true) {
             addJob();
             break;
         case '2':
-            printJobs();
+            displayJobs();
             break;
         case '3':
             searchJobById();
@@ -62,6 +62,7 @@ while (true) {
         case '4':
             console.log('Exiting program...');
             process.exit(0);
+            break;
         default:
             console.log('Invalid choice. Please choose again.');
     }
