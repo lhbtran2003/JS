@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    position: relative;
+    width: 200px; /*kích thước ban đầu*/
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.3s ease; /* Hiệu ứng transition cho icon */
+}
+
+.search-input {
+    width: 0;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    transition: width 0.3s ease; /* Hiệu ứng transition cho thanh search bar */
+}
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div id="searchIcon" class="search-icon">
+            <img src="search-icon.png" alt="Search Icon">
+        </div>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+    </div>
+
+    <script src="ex2.js"></script>
+</body>
+</html>
